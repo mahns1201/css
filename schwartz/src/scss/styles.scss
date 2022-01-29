@@ -121,6 +121,9 @@ article:nth-child(even) {
 }
 
 footer {
+  position: absolute;
+  width: 100vw;
+  left: 0;
   height: 40vh;
   color: white;
   background-color: #464646;
