@@ -32,13 +32,33 @@ main {
   grid-auto-rows: 70vh;
   article {
     padding: 2rem;
+    cursor: pointer;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2rem auto 2rem;
-    div:not(:nth-child(2)) {
+
+    div:nth-child(1) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    div:nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hovered {
+      display: none;
+    }
+
+    &:hover {
+      .normal {
+        display: none;
+      }
+      .hovered {
+        display: block;
+      }
     }
   }
   article:nth-child(odd) {
